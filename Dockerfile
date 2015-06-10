@@ -15,8 +15,8 @@ RUN apt-get install -y arping
 RUN wget --no-check-certificate --quiet https://raw.githubusercontent.com/AkihiroSuda/pipework/fix-pid-conflict/pipework -O /usr/local/bin/pipework
 RUN chmod +x /usr/local/bin/pipework
 
-# Install misc
-RUN apt-get install -y less lv netcat telnet
+# Install misc stuffs
+RUN apt-get install -y less lv netcat telnet bash-completion vim byobu
 
 # Install init
 ADD ./init.dind-ovs-ryu-pipework-superpack.sh /init.dind-ovs-ryu-pipework-superpack.sh
