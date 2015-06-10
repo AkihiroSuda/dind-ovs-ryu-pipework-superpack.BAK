@@ -2,10 +2,12 @@
 
 This container helps you connect [Docker-in-Docker](https://github.com/jpetazzo/dind) to [Open vSwitch](http://openvswitch.org/) (-in-Docker, with [ryu](http://osrg.github.io/ryu/)) via [pipework](https://github.com/jpetazzo/pipework).
 
+Available on Docker Hub: https://registry.hub.docker.com/u/akihirosuda/dind-ovs-superpack/
+
 ## Usage
 
     $ sudo modprobe openvswitch
-    $ docker run --privileged -t -i -e LOG=file -h dind-superpack --rm akihirosuda/dind-ovs-ryu-pipework-superpack
+    $ docker run --privileged -t -i -e LOG=file -h dind-superpack --rm akihirosuda/dind-ovs-superpack
      * /etc/openvswitch/conf.db does not exist
      * Creating empty database /etc/openvswitch/conf.db
      * Starting ovsdb-server
